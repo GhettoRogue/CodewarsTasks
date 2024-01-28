@@ -1,13 +1,15 @@
-﻿var listOfNames = new List<string> { "Ryan", "Kieran", "Mark" };
+﻿var listOfNames = new List<string> { "Ryan", "Kieran", "Mark", "Alice", "Anna", "Tom", "Mike" };
 
-foreach (var friends in FriendOrFoe(listOfNames))
-{
-    Console.WriteLine(friends);
-}
+Console.Clear();
+FriendOrFoe(listOfNames);
 
 return;
 
-IEnumerable<string> FriendOrFoe(IEnumerable<string> names)
+static IEnumerable<string> FriendOrFoe(IEnumerable<string> list)
 {
-    return names.Where(n => n.Length == 4).ToList();
+    var findFriends = list.Where(n => n.Length == 4).Order().ToList();
+
+    findFriends.ForEach(Console.WriteLine);
+
+    return findFriends;
 }
