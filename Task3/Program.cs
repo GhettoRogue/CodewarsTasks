@@ -1,10 +1,6 @@
 ﻿var haystack = new object[] { "hay", "junk", "hay", "hay", "moreJunk", "needle", "randomJunk" };
 
-Console.Clear();
-foreach (var item in FindNeedle(haystack))
-{
-    Console.Write(item);
-}
+PrintFoundNeedle(FindNeedle(haystack));
 
 return;
 
@@ -14,4 +10,10 @@ static string FindNeedle(object[] list)
     const string needle = "needle";
 
     return message + Array.IndexOf(list, needle);
+}
+
+void PrintFoundNeedle(string obj)
+{
+    Console.Clear();
+    Console.WriteLine(obj);
 }
