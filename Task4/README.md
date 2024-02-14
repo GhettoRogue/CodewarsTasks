@@ -8,9 +8,11 @@ The four operators are "add", "subtract", "divide", "multiply".
 
 A few **examples:(Input1, Input2, Input3 --> Output)**
 
+```csharp
 _5, 2, "add"      --> 7_\
 _5, 2, "subtract" --> 3_\
 _5, 2, "multiply" --> 10_\
 _5, 2, "divide"   --> 2.5_
+```
 
 <u>Try to do it without using if statements!</u>
