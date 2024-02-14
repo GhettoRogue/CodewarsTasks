@@ -8,6 +8,8 @@ After your function finds the needle it should return a message (as a string) th
 
 **Example(Input --> Output)**
 
+```csharp
 ["hay", "junk", "hay", "hay", "moreJunk", "needle", "randomJunk"] --> "found the needle at position 5"
+```
 
 **Note: In COBOL, it should return** `"found the needle at position 6"`
